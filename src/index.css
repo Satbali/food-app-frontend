@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+:root {
+  /* colours */
+  --white: #fcfcff;
+  --red: #e54f6d;
+  --yellow: #f9e900;
+  --black: #030301;
+  --green: #5aed70;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  background-color: var(--white);
+}
+
+nav {
+  background-color: var(--yellow);
+  display: flex;
+  padding: 1rem 0;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+}
+nav a:hover {
+  color: var(--white);
+  scale: 1.1;
+}
+nav button {
+  padding: 10px 12px;
+  background-color: var(--white);
+  border: none;
+  outline: none;
+  margin: 0 25px 0 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav button:hover {
+  scale: 1.1;
+}
+nav .userLogoutbtn {
+  text-transform: capitalize;
+}
+.container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+.allForm {
+  width: 23rem;
+  margin: auto;
+}
+/* .container .formContainer {
+  display: flex; 
+} */
+.container label {
+  font-size: large;
+  width: 20%;
+}
+.container input {
+  flex-basis: 2;
+  margin-top: 1.5rem;
+  font-size: large;
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.container input::placeholder {
+  color: #ccc;
+}
+.container button {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--yellow);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+.container button:hover {
+  background-color: rgb(236, 236, 8);
+}
+
+.outerFoodContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.foodContainer {
+  margin-top: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  padding: 0 1rem;
+}
+.ffff {
+  justify-content: center;
+}
+.foodContainer h2 {
+  color: var(--green);
+}
+.foodContainer .image {
+  height: 350px;
+  width: 350px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.foodContainer img {
+  height: 350px;
+  width: 350px;
+  margin-top: 10px;
+}
+.foodContainer .namePrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foodContainer .namePrice p {
+  font-weight: bold;
+}
+.foodRight {
+  margin-left: 2rem;
+}
+.address {
+  color: var(--black);
+  padding-bottom: 10px;
+}
+.messageContainer {
+  border: 2px solid var(--green);
+  padding: 10px 8px;
+  background-color: rgb(209, 255, 209);
+  color: var(--green);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.errorContainer {
+  border: 2px solid var(--red);
+  padding: 10px 8px;
+  background-color: rgb(255, 214, 214);
+  color: var(--red);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.addDel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addDel span {
+  background-color: rgb(255, 214, 214);
+  padding: 10px;
+  color: var(--red);
+  cursor: pointer;
+}
+.error {
+  border: 1px solid red;
+}
